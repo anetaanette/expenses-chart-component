@@ -1,9 +1,104 @@
-footer {
-  > .attribution {
-    font-size: 11px;
-    text-align: center;
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// - Soft red: hsl(10, 79%, 65%)
+// - Cyan: hsl(186, 34%, 60%)
+
+// - Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+// - Weights: 400, 700
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+:root {
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+}
+
+* {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background-color: var(--cream);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  > .upper {
+    width: 20rem;
+    height: 5rem;
+    background-color: var(--soft-red);
+    padding: 1.2rem;
+    display: flex;
+    gap: 9.5rem;
+    color: white;
+    border-radius: 1rem;
+    > .flex-column {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      > .balance {
+        font-size: 0.65rem;
+      }
+      > .balance-score {
+        font-size: 1.2rem;
+      }
+    }
+    > .logo {
+      width: 3rem;
+    }
   }
-  > .attribution a {
-    color: hsl(228, 45%, 44%);
+  > .lower {
+    width: 20rem;
+    height: 17rem;
+    background-color: white;
+    border-radius: 1rem;
+    > .data {
+      display: flex;
+      gap: 1rem;
+      color: var(--medium-brown);
+    }
+    > .data::after {
+      // FINISH LATER!!!!
+      content: "";
+      display: block;
+      //width: 20rem;
+      height: 0;
+      //padding: 0.5rem;
+      border-bottom: 1px solid var(--light-grayish-blue);
+    }
   }
+  > footer {
+    // IS IT IN THE CENTER?????!!!!
+    position: absolute;
+    //bottom: 0;
+    // left: 50%;
+
+    bottom: 0;
+    left: 52%;
+    transform: translate(-52%, 0);
+    > .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    > .attribution a {
+      font-size: 11px;
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}
+
+.brown {
+  color: var(--medium-brown);
 }

@@ -15,22 +15,36 @@
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
   <body>
-    <section class="upper">
-      <p class="balance">My balance</p>
-      <p class="balance-score">$921.48</p>
+    <section class="upper upper-flex">
+      <section class="flex-column">
+        <p class="balance">My balance</p>
+        <p class="balance-score">$921.48</p>
+      </section>
+      <img src="./images/logo.svg" alt="logo" class="logo" />
     </section>
-    <section class="lower-first">
-      <h1>Spending - Last 7 days</h1>
-    </section>
-    <section class="lower-second-left">
-      <p class="lower-p gray">Total this month</p>
-      <h2 class="lower-h2">$478.33</h2>
-      <section class="lower-second-right">
-        <h3>+ 2.4%</h3>
-        <p class="gray">from last month</p>
+    <section class="lower">
+      <section class="lower-first">
+        <h1>Spending - Last 7 days</h1>
+      </section>
+      <section class="data">
+        <div class="mon">mon</div>
+        <div class="tue">tue</div>
+        <div class="wed">wed</div>
+        <div class="thu">thu</div>
+        <div class="fri">fri</div>
+        <div class="sat">sat</div>
+        <div class="sun">sun</div>
+      </section>
+      <section class="lower-second-left">
+        <p class="lower-p brown">Total this month</p>
+        <h2 class="lower-h2">$478.33</h2>
+        <section class="lower-second-right">
+          <h3>+ 2.4%</h3>
+          <p class="brown">from last month</p>
+        </section>
       </section>
     </section>
-    mon tue wed thu fri sat sun
+
     <footer>
       <div class="attribution">
         Challenge by
