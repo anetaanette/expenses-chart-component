@@ -27,18 +27,75 @@
         <h1>Spending - Last 7 days</h1>
       </section>
       <section class="data">
-        <div class="mon">mon</div>
-        <div class="tue">tue</div>
-        <div class="wed">wed</div>
-        <div class="thu">thu</div>
-        <div class="fri">fri</div>
-        <div class="sat">sat</div>
-        <div class="sun">sun</div>
+        <!--  
+        <section class="columns">
+          <div class="column column-mon"></div>
+          <div class="column column-tue"></div>
+          <div class="column column-wed"></div>
+          <div class="column column-thu"></div>
+          <div class="column column-fri"></div>
+          <div class="column column-sat"></div>
+          <div class="column column-sun"></div>
+        </section>
+        <section class="days">
+          <div class="mon day">mon</div>
+          <div class="tue day">tue</div>
+          <div class="wed day">wed</div>
+          <div class="thu day">thu</div>
+          <div class="fri day">fri</div>
+          <div class="sat day">sat</div>
+          <div class="sun day">sun</div>
+        </section>
+-->
+
+        <div class="monday flex-column">
+          <div class="amount amount-mon"></div>
+          <div class="column column-mon"></div>
+          <div class="mon day">mon</div>
+        </div>
+
+        <div class="tuesday flex-column">
+          <div class="amount amount-tue"></div>
+          <div class="column column-tue"></div>
+          <div class="tue day">tue</div>
+        </div>
+
+        <div class="wednesday flex-column">
+          <div class="amount amount-wed"></div>
+          <div class="column column-wed"></div>
+          <div class="wed day">wed</div>
+        </div>
+
+        <div class="thursday flex-column">
+          <div class="amount amount-thu"></div>
+          <div class="column column-thu"></div>
+          <div class="thu day">thu</div>
+        </div>
+
+        <div class="friday flex-column">
+          <div class="amount amount-fri"></div>
+          <div class="column column-fri"></div>
+          <div class="fri day">fri</div>
+        </div>
+
+        <div class="saturday flex-column">
+          <div class="amount amount-sat"></div>
+          <div class="column column-sat"></div>
+          <div class="sat day">sat</div>
+        </div>
+
+        <div class="sunday flex-column">
+          <div class="amount amount-sun"></div>
+          <div class="column column-sun"></div>
+          <div class="sun day">sun</div>
+        </div>
       </section>
-      <section class="lower-second-left">
-        <p class="lower-p brown">Total this month</p>
-        <h2 class="lower-h2">$478.33</h2>
-        <section class="lower-second-right">
+      <section class="flex">
+        <section class="column-left">
+          <p class="lower-p brown">Total this month</p>
+          <h2 class="lower-h2">$478.33</h2>
+        </section>
+        <section class="column-right">
           <h3>+ 2.4%</h3>
           <p class="brown">from last month</p>
         </section>
