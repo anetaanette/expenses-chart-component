@@ -30,12 +30,12 @@ body {
   align-items: center;
   gap: 1rem;
   > .upper {
-    width: 20rem;
+    width: 21rem;
     height: 5rem;
     background-color: var(--soft-red);
     padding: 1.2rem;
     display: flex;
-    gap: 10rem;
+    gap: 11rem;
     color: white;
     border-radius: 1rem;
     > .flex-column {
@@ -54,8 +54,8 @@ body {
     }
   }
   > .lower {
-    width: 20rem;
-    height: 20rem;
+    width: 21rem;
+    height: 22rem;
     background-color: white;
     border-radius: 1rem;
     padding: 1.3rem;
@@ -63,19 +63,21 @@ body {
       display: flex;
       color: var(--medium-brown);
       padding-bottom: 1rem;
-      gap: 0.8rem;
+      gap: 0.9rem;
       padding-top: 1.5rem;
       border-bottom: 1px solid var(--medium-brown);
       //
       > .flex-column {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 0.5rem;
+        align-items: center;
         //
         > .amount {
           background-color: black;
-          width: 2.4rem;
+          width: 2.3rem;
           height: 1.3rem;
+          border-radius: 0.2rem;
           display: none;
         }
         > .column {
@@ -83,7 +85,7 @@ body {
           flex-direction: column;
           //width: 1.7rem;
           background-color: var(--soft-red);
-          border-radius: 0.5rem;
+          border-radius: 0.3rem;
           cursor: pointer;
         }
         .day {
@@ -132,14 +134,8 @@ body {
   }
 
   > footer {
-    // IS IT IN THE CENTER?????!!!!
     position: absolute;
-    //bottom: 0;
-    // left: 50%;
-
     bottom: 0;
-    left: 52%;
-    transform: translate(-52%, 0);
     > .attribution {
       font-size: 11px;
       text-align: center;
@@ -187,8 +183,8 @@ body {
 }
 
 .column-wed {
-  height: 5.5rem;
-  background-color: var(--cyan);
+  height: 7rem;
+  background: var(--cyan);
 }
 .column-thu {
   height: 3.5rem;
@@ -209,5 +205,5 @@ body {
 }
 
 .column:hover + .amount {
-  display: inline;
+  display: block;
 }
