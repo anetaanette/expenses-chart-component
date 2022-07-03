@@ -1,32 +1,35 @@
 console.log("hfygf");
 
-/* const hiddenAmount = document.getElementsByClassName(".amount");
-  const column = document.getElementsByClassName(".column");
-
-  let j = hiddenAmount.length;
-  while (j++) {
-  let i = column.length;
-while (i++) {
-  column[i].addEventListener("mouseover", showAmount);
-   
-  function showAmount() {
-      hiddenAmount.style.display = 'block';
-  }
-  }
-  };
-  */ 
-
-
-
 
 // GETTING JSON DATA 
 async function loadNumbers() {
-    const result = await fetch('./data.json');
-    const numbers = await result.json();
-    console.log(numbers); 
-  }
+  const result = await fetch('./data.json');
+  const numbers = await result.json();
+  console.log(numbers); 
+}
 
-  console.log(loadNumbers());
+console.log(loadNumbers());
+
+
+
+const hiddenAmount = document.querySelector(".amount-mon");
+let column = document.querySelector(".column-mon");
+
+column.addEventListener("mouseenter", showAmount);
+   
+function showAmount() {
+  hiddenAmount.style.display = 'block';
+  hiddenAmount.innerHTML = [0].amount[0];
+};
+
+column.addEventListener("mouseleave", hideAmount);
+
+function hideAmount() {
+  hiddenAmount.style.display = 'none';
+}; 
+
+
+
 /*
 
 const hiddenMon = document.querySelector(".amount-mon");

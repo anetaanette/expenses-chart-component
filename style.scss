@@ -72,31 +72,51 @@ body {
         flex-direction: column;
         gap: 0.5rem;
         align-items: center;
-        //
         > .amount {
           background-color: black;
-          width: 2.3rem;
-          height: 1.3rem;
+          width: 1.8rem;
+          height: 1.2rem;
           border-radius: 0.2rem;
           display: none;
+          font-size: 0.5rem;
+          color: white;
         }
         > .column {
           display: flex;
           flex-direction: column;
-          //width: 1.7rem;
+          width: 1.8rem;
           background-color: var(--soft-red);
           border-radius: 0.3rem;
           cursor: pointer;
         }
+        .column-mon {
+          height: 2rem;
+        }
+
+        .column-tue {
+          height: 4rem;
+        }
+
+        .column-wed {
+          height: 7rem;
+          background: var(--cyan);
+        }
+        .column-thu {
+          height: 3.5rem;
+        }
+
+        .column-fri {
+          height: 3.2rem;
+        }
+        .column-sat {
+          height: 3.8rem;
+        }
+        .column-sun {
+          height: 3.3rem;
+        }
         .day {
           text-align: center;
         }
-      }
-      // delete days?????
-      > .days {
-        display: flex;
-        gap: 0.9rem;
-        text-align: center;
       }
     }
 
@@ -151,19 +171,6 @@ body {
   color: var(--medium-brown);
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  width: 1.8rem;
-  background-color: var(--soft-red);
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
-.days > * {
-  width: 3rem;
-}
-
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -174,36 +181,6 @@ body {
   opacity: 0.8;
 }
 
-.column-mon {
-  height: 2rem;
-}
-
-.column-tue {
-  height: 4rem;
-}
-
-.column-wed {
-  height: 7rem;
-  background: var(--cyan);
-}
-.column-thu {
-  height: 3.5rem;
-}
-
-.column-fri {
-  height: 3.2rem;
-}
-.column-sat {
-  height: 3.8rem;
-}
-.column-sun {
-  height: 3.3rem;
-}
-
 .day {
   font-size: 0.7rem;
-}
-
-.column:hover + .amount {
-  display: block;
 }

@@ -108,10 +108,12 @@ body > .lower > .data > .flex-column {
 
 body > .lower > .data > .flex-column > .amount {
   background-color: black;
-  width: 2.3rem;
-  height: 1.3rem;
+  width: 1.8rem;
+  height: 1.2rem;
   border-radius: 0.2rem;
   display: none;
+  font-size: 0.5rem;
+  color: white;
 }
 
 body > .lower > .data > .flex-column > .column {
@@ -122,20 +124,42 @@ body > .lower > .data > .flex-column > .column {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 1.8rem;
   background-color: var(--soft-red);
   border-radius: 0.3rem;
   cursor: pointer;
 }
 
-body > .lower > .data > .flex-column .day {
-  text-align: center;
+body > .lower > .data > .flex-column .column-mon {
+  height: 2rem;
 }
 
-body > .lower > .data > .days {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 0.9rem;
+body > .lower > .data > .flex-column .column-tue {
+  height: 4rem;
+}
+
+body > .lower > .data > .flex-column .column-wed {
+  height: 7rem;
+  background: var(--cyan);
+}
+
+body > .lower > .data > .flex-column .column-thu {
+  height: 3.5rem;
+}
+
+body > .lower > .data > .flex-column .column-fri {
+  height: 3.2rem;
+}
+
+body > .lower > .data > .flex-column .column-sat {
+  height: 3.8rem;
+}
+
+body > .lower > .data > .flex-column .column-sun {
+  height: 3.3rem;
+}
+
+body > .lower > .data > .flex-column .day {
   text-align: center;
 }
 
@@ -209,24 +233,6 @@ body > footer > .attribution a {
   color: var(--medium-brown);
 }
 
-.column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 1.8rem;
-  background-color: var(--soft-red);
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
-.days > * {
-  width: 3rem;
-}
-
 .flex-column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,40 +250,7 @@ body > footer > .attribution a {
   opacity: 0.8;
 }
 
-.column-mon {
-  height: 2rem;
-}
-
-.column-tue {
-  height: 4rem;
-}
-
-.column-wed {
-  height: 7rem;
-  background: var(--cyan);
-}
-
-.column-thu {
-  height: 3.5rem;
-}
-
-.column-fri {
-  height: 3.2rem;
-}
-
-.column-sat {
-  height: 3.8rem;
-}
-
-.column-sun {
-  height: 3.3rem;
-}
-
 .day {
   font-size: 0.7rem;
-}
-
-.column:hover + .amount {
-  display: block;
 }
 /*# sourceMappingURL=style.css.map */
